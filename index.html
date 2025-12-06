@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <title>GET BLEAK</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Tahoma, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        background-color: black;
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .row {
+        display: grid;
+        gap: 10px;
+      }
+
+      .row1,
+      .row2 {
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        font-family: Arial, sans-serif;
+      }
+
+      .row3 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      #logo {
+        width: 100vw;
+        max-width: 1200px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:visited {
+        color: pink;
+      }
+      a:hover {
+        color: hotpink;
+        text-decoration: underline;
+      }
+
+      .column {
+        border-radius: 8px;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row row1"></div>
+    <div class="row row2">
+      <img id="logo" src="logo white.png" alt="">
+    </div>
+    <div class="row row3">
+      <div class="column"></div>
+      <div class="column">
+        <div>
+          <a href="https://www.instagram.com/bleak.enterprise">INSTAGRAM</a>
+        </div>
+      </div>
+      <div class="column">
+        <div>
+          <a href="https://bleakenterprise.bandcamp.com">BANDCAMP</a>
+        </div>
+      </div>
+      <div class="column"></div>
+    </div>
+  </body>
+</html>
